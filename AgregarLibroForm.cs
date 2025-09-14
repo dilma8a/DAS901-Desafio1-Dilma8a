@@ -31,7 +31,8 @@ namespace DAS901_Desafio1_Dilma8a
                 Id = txtId.Text,
                 Titulo = txtTitulo.Text,
                 Autor = txtAutor.Text,
-                Anio = int.Parse(txtAnio.Text)
+                Anio = int.Parse(txtAnio.Text),
+                Estado = cbxEstado.SelectedItem?.ToString()
             };
 
             this.DialogResult = DialogResult.OK;
@@ -51,11 +52,17 @@ namespace DAS901_Desafio1_Dilma8a
                 Id = txtId.Text,
                 Titulo = txtTitulo.Text,
                 Autor = txtAutor.Text,
-                Anio = int.Parse(txtAnio.Text)
+                Anio = int.Parse(txtAnio.Text),
+                Estado = cbxEstado.SelectedItem?.ToString()
             };
 
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void cbxEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

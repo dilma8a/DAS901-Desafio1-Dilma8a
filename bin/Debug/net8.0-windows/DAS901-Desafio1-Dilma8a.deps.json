@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DAS901-Desafio1-Dilma8a/1.0.0": {
+        "runtime": {
+          "DAS901-Desafio1-Dilma8a.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DAS901-Desafio1-Dilma8a/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

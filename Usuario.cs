@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace DAS901_Desafio1_Dilma8a
 {
-    public class Libro
+    public class Usuario
     {
         public string Id { get; set; }
 
-        public string Titulo { get; set; }
+        public string Nombre { get; set; }
 
-        public string Autor { get; set; }
-
-        public int Anio { get; set; }
-
-        public string Estado { get; set; }
-
+        public string Correo { get; set; }
     }
 }

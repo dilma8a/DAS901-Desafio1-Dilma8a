@@ -28,60 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblTituloPrincipal = new Label();
             panel1 = new Panel();
-            button3 = new Button();
-            button2 = new Button();
+            btnPrestamos = new Button();
+            btnUsuarios = new Button();
             btnLibros = new Button();
             panelPrincipal = new Panel();
             btnAgregarLibro = new Button();
             panel2 = new Panel();
             btnEliminar = new Button();
             btnEditar = new Button();
+            panelUsuario = new Panel();
+            btnEstadisticas = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // lblTituloPrincipal
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ImageAlign = ContentAlignment.TopCenter;
-            label1.Location = new Point(494, 39);
-            label1.Name = "label1";
-            label1.Size = new Size(614, 65);
-            label1.TabIndex = 0;
-            label1.Text = "GESTION DE BIBLIOTECA";
-            label1.Click += label1_Click;
+            lblTituloPrincipal.AutoSize = true;
+            lblTituloPrincipal.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloPrincipal.ImageAlign = ContentAlignment.TopCenter;
+            lblTituloPrincipal.Location = new Point(494, 39);
+            lblTituloPrincipal.Name = "lblTituloPrincipal";
+            lblTituloPrincipal.Size = new Size(833, 65);
+            lblTituloPrincipal.TabIndex = 0;
+            lblTituloPrincipal.Text = "GESTION DE BIBLIOTECA - LIBROS";
+            lblTituloPrincipal.Click += label1_Click;
             // 
             // panel1
             // 
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnEstadisticas);
+            panel1.Controls.Add(btnPrestamos);
+            panel1.Controls.Add(btnUsuarios);
             panel1.Controls.Add(btnLibros);
             panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(286, 495);
+            panel1.Size = new Size(286, 455);
             panel1.TabIndex = 1;
             // 
-            // button3
+            // btnPrestamos
             // 
-            button3.Location = new Point(53, 237);
-            button3.Name = "button3";
-            button3.Size = new Size(147, 52);
-            button3.TabIndex = 2;
-            button3.Text = "Préstamos";
-            button3.UseVisualStyleBackColor = true;
+            btnPrestamos.Location = new Point(53, 237);
+            btnPrestamos.Name = "btnPrestamos";
+            btnPrestamos.Size = new Size(147, 52);
+            btnPrestamos.TabIndex = 2;
+            btnPrestamos.Text = "Préstamos";
+            btnPrestamos.UseVisualStyleBackColor = true;
+            btnPrestamos.Click += btnPrestamos_Click;
             // 
-            // button2
+            // btnUsuarios
             // 
-            button2.Location = new Point(50, 151);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 46);
-            button2.TabIndex = 1;
-            button2.Text = "Usuarios";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnUsuarios.Location = new Point(50, 151);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(150, 46);
+            btnUsuarios.TabIndex = 1;
+            btnUsuarios.Text = "Usuarios";
+            btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
             // 
             // btnLibros
             // 
@@ -91,11 +95,11 @@
             btnLibros.TabIndex = 0;
             btnLibros.Text = "Libros";
             btnLibros.UseVisualStyleBackColor = true;
-            btnLibros.Click += button1_Click;
+            btnLibros.Click += btnLibros_Click;
             // 
             // panelPrincipal
             // 
-            panelPrincipal.Location = new Point(345, 122);
+            panelPrincipal.Location = new Point(345, 226);
             panelPrincipal.Name = "panelPrincipal";
             panelPrincipal.Size = new Size(1173, 550);
             panelPrincipal.TabIndex = 2;
@@ -103,7 +107,7 @@
             // 
             // btnAgregarLibro
             // 
-            btnAgregarLibro.Location = new Point(28, 25);
+            btnAgregarLibro.Location = new Point(250, 25);
             btnAgregarLibro.Name = "btnAgregarLibro";
             btnAgregarLibro.Size = new Size(150, 46);
             btnAgregarLibro.TabIndex = 3;
@@ -116,14 +120,14 @@
             panel2.Controls.Add(btnEliminar);
             panel2.Controls.Add(btnEditar);
             panel2.Controls.Add(btnAgregarLibro);
-            panel2.Location = new Point(345, 697);
+            panel2.Location = new Point(345, 806);
             panel2.Name = "panel2";
-            panel2.Size = new Size(996, 92);
+            panel2.Size = new Size(1173, 92);
             panel2.TabIndex = 3;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(461, 25);
+            btnEliminar.Location = new Point(822, 25);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(150, 46);
             btnEliminar.TabIndex = 5;
@@ -133,7 +137,7 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(246, 26);
+            btnEditar.Location = new Point(543, 25);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(150, 46);
             btnEditar.TabIndex = 4;
@@ -141,17 +145,35 @@
             btnEditar.UseVisualStyleBackColor = true;
             btnEditar.Click += btnEditar_Click;
             // 
+            // panelUsuario
+            // 
+            panelUsuario.Location = new Point(345, 139);
+            panelUsuario.Name = "panelUsuario";
+            panelUsuario.Size = new Size(1173, 81);
+            panelUsuario.TabIndex = 4;
+            // 
+            // btnEstadisticas
+            // 
+            btnEstadisticas.Location = new Point(58, 337);
+            btnEstadisticas.Name = "btnEstadisticas";
+            btnEstadisticas.Size = new Size(150, 46);
+            btnEstadisticas.TabIndex = 3;
+            btnEstadisticas.Text = "Estadisticas";
+            btnEstadisticas.UseVisualStyleBackColor = true;
+            btnEstadisticas.Click += btnEstadisticas_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1637, 823);
+            ClientSize = new Size(1637, 1016);
+            Controls.Add(panelUsuario);
             Controls.Add(panel2);
             Controls.Add(panelPrincipal);
             Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(lblTituloPrincipal);
             Name = "Form1";
-            Text = "Form1";
+            Text = "GESTION DE BIBLIOTECA";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
@@ -161,15 +183,18 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblTituloPrincipal;
         private Panel panel1;
-        private Button button2;
+        private Button btnUsuarios;
         private Button btnLibros;
-        private Button button3;
+        private Button btnPrestamos;
         private Panel panelPrincipal;
         private Button btnAgregarLibro;
         private Panel panel2;
         private Button btnEditar;
         private Button btnEliminar;
+        private ComboBox cbxUsuario;
+        private Panel panelUsuario;
+        private Button btnEstadisticas;
     }
 }
