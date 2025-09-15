@@ -184,7 +184,7 @@ namespace DAS901_Desafio1_Dilma8a
             listaLibro.Add(new Libro
             {
                 Id = "003",
-                Titulo = "Cien a�os de soledad",
+                Titulo = "Cien años de soledad",
                 Autor = "Gabriel Garcia Marquez",
                 Anio = 1967,
                 Estado = "Disponible"
